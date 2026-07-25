@@ -38,6 +38,6 @@ app.add_handler(CommandHandler("analyze", analyze))
 app.add_handler(CommandHandler("strategy", strategy))
 
 
-print("FX Trading AI Bot Running...")
+print("FX Trading AI Bot Running...", flush=True)
 
-app.run_polling()
+app.run_polling(drop_pending_updates=True)
